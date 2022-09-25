@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "hooks dev",
+    "dev": "hooks dev -p 3000",
     "build": "hooks build",
-    "start": "hooks start",
+    "start": "hooks start -p 3000",
     "check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@koa/cors": "^3.4.1",
     "@midwayjs/hooks": "^3.0.0",
     "@midwayjs/hooks-kit": "^3.0.0",
     "@midwayjs/koa": "^3.1.0",
